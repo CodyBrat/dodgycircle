@@ -25,7 +25,7 @@ export default function App() {
 
   // Accelerometer movement
   useEffect(() => {
-    Accelerometer.setUpdateInterval(40);
+    Accelerometer.setUpdateInterval(10);
 
     const subscription = Accelerometer.addListener(({ x }) => {
       if (gameOver) return;

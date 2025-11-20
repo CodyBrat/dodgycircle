@@ -1,12 +1,12 @@
 # Circle Dodge Game – README
 
-A simple tilt-controlled mobile browser game where you move a circle to avoid falling balls. Built using plain HTML, CSS, and JavaScript.
+A simple tilt-controlled mobile browser game where you move a circle to avoid falling balls. Built using react native accelometer
 
 ---
 
 ## 📌 Features
 
-* Tilt-based movement using **DeviceOrientation** API
+* Tilt-based movement using **React Native Accelerometer** 
 * Randomly generated falling obstacles
 * Real-time collision detection
 * Score system based on survival time
@@ -19,9 +19,7 @@ A simple tilt-controlled mobile browser game where you move a circle to avoid fa
 
 ```
 /project
-│── index.html
-│── styles.css
-│── script.js
+│── App.js
 ```
 
 ---
@@ -29,14 +27,10 @@ A simple tilt-controlled mobile browser game where you move a circle to avoid fa
 ## 📄 index.html
 
 * Loads the game container
-* Links to `styles.css` and `script.js`
 * Contains the main `#game-container` and player element (`#player`)
 * Includes the score UI and a start button
 
----
-
-## 🎨 styles.css
-
+--
 ### Main Responsibilities
 
 * Rendering the game layout
@@ -56,10 +50,6 @@ A simple tilt-controlled mobile browser game where you move a circle to avoid fa
 | `#start-btn`      | Button to start game             |
 
 ---
-
-## 🧠 script.js
-
-This file contains **all game logic**, including:
 
 ### 1️⃣ Initialization Variables
 
@@ -152,14 +142,7 @@ Converts them to movement by scaling values.
 
 ---
 
-## 🔧 Browser Permissions
-
-Mobile browsers require:
-
-* Motion sensor permission (`DeviceOrientationEvent.requestPermission`) on iOS
-
 ---
-
 ## 🚀 How to Play
 
 1. Open the game on a mobile device
@@ -168,10 +151,3 @@ Mobile browsers require:
 4. Avoid the falling red balls
 5. Survive as long as possible to score higher
 
----
-
-## 📜 License
-
-MIT – Free to use, modify, and distribute
-
----
